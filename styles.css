@@ -1,5 +1,6 @@
 body {
   width: 2480px;
+  height: 3508px;
   font-family: "Roboto", sans-serif;
   font-size: 48px;
 }
@@ -26,7 +27,6 @@ p {
 }
 
 .cv-container {
-  height: 3508px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -42,7 +42,6 @@ p {
 }
 
 .block {
-  height: 3508px;
   border: 2px solid rgb(3, 22, 64);
   border-radius: 20px;
 }
@@ -50,7 +49,7 @@ p {
 .block__left {
   padding: 30px;
   width: 850px;
-  /* height: 100%; */
+  height: 100%;
   color: white;
   background-image: linear-gradient(
     30deg,
@@ -132,7 +131,7 @@ p {
 .block__right {
   background-color: rgba(3, 22, 64, 0.128);
   width: 1630px;
-  /* height: 100%; */
+  height: 100%;
   color: rgb(3, 22, 64);
 }
 

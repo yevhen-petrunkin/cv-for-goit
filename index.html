@@ -16,266 +16,230 @@
       href="node_modules/modern-normalize/modern-normalize.css"
     />
     <link rel="stylesheet" href="./styles.css" />
-    <script src="./js/html2canvas.min.js"></script>
-    <script src="./js/jsPDF/dist/jspdf.umd.js"></script>
-    <script>
-      window.jsPDF = window.jspdf.jsPDF;
-      // Convert HTML content to PDF
-      function Convert_HTML_To_PDF() {
-        var doc = new jsPDF();
-
-        // Source HTMLElement or a string containing HTML.
-        var elementHTML = document.querySelector("#contentToPrint");
-
-        doc.html(elementHTML, {
-          callback: function (doc) {
-            // Save the PDF
-            doc.save("document-html.pdf");
-          },
-          margin: [0, 0, 0, 0],
-          autoPaging: "text",
-          x: 0,
-          y: 0,
-          width: 209, //target width in the PDF document
-          windowWidth: 2480, //window width in CSS pixels
-        });
-      }
-    </script>
   </head>
   <body>
-    <div class="container">
-      <div class="wrapper">
-        <div id="contentToPrint" class="cv-container">
-          <div class="block block__left">
-            <div class="photo-block">
-              <img class="photo-block__photo" src="./photo.jpg" alt="My Face" />
-              <p class="photo-block__location">Shostka, Ukraine</p>
-              <p class="photo-block__location">(relocation possible)</p>
+    <div id="contentToPrint" class="cv-container">
+      <div class="block block__left">
+        <div class="photo-block">
+          <img class="photo-block__photo" src="./photo.jpg" alt="My Face" />
+          <p class="photo-block__location">Shostka, Ukraine</p>
+          <p class="photo-block__location">(relocation possible)</p>
+        </div>
+        <address class="contacts">
+          <a href="tel:+380962978729" class="contact link"
+            ><svg class="icon" width="50" height="50">
+              <use href="./icons.svg#mobile"></use>
+            </svg>
+            <span>+380962978729</span></a
+          >
+          <a href="tel:+380950143156" class="contact link"
+            ><svg class="icon" width="50" height="50">
+              <use href="./icons.svg#mobile"></use>
+            </svg>
+            <span>+380950143156</span></a
+          >
+          <a href="tel:+380962978729" class="contact link"
+            ><svg class="icon" width="50" height="50">
+              <use href="./icons.svg#whatsapp"></use>
+            </svg>
+            <span>+380962978729</span></a
+          >
+          <a href="mailto:novamovaxxi@gmail.com" class="contact link"
+            ><svg class="icon" width="50" height="50">
+              <use href="./icons.svg#envelope"></use>
+            </svg>
+            <span>novamovaxxi@gmail.com</span></a
+          >
+          <a href="https://t.me/yevhen_petrunkin" class="contact link"
+            ><svg class="icon" width="50" height="50">
+              <use href="./icons.svg#telegram"></use>
+            </svg>
+            <span>@yevhen_petrunkin</span></a
+          >
+          <a
+            href="https://www.linkedin.com/in/yevhen-petrunkin-503617259/"
+            class="contact link"
+          >
+            <svg class="icon" width="50" height="50">
+              <use href="./icons.svg#linkedin"></use>
+            </svg>
+            <span>Yevhen Petrunkin</span></a
+          >
+          <a href="https://github.com/yevhen-petrunkin" class="contact link">
+            <svg class="icon" width="50" height="50">
+              <use href="./icons.svg#github"></use>
+            </svg>
+            <span>yevhen-petrunkin</span></a
+          >
+          <a
+            href="https://www.facebook.com/profile.php?id=100011788286630"
+            class="contact link"
+          >
+            <svg class="icon" width="50" height="50">
+              <use href="./icons.svg#facebook"></use>
+            </svg>
+            <span>Yevhen Petrunkin</span></a
+          >
+        </address>
+        <div class="hardskills">
+          <h3 class="hardskills__heading">Tech Skills:</h3>
+          <ul class="hardskills__list list">
+            <li class="hardskills__description">
+              JavaScript (REST API, Ajax, CRUD, jQuery);
+            </li>
+            <li class="hardskills__description">React (Redux);</li>
+            <li class="hardskills__description">
+              HTML5, CSS, SASS/SCSS, BEM, Bootstrap;
+            </li>
+            <li class="hardskills__description">Git (GitHub, GitBash)</li>
+            <li class="hardskills__description">Webpack, Parcel</li>
+            <li class="hardskills__description">Node.js, TypeScript</li>
+          </ul>
+        </div>
+        <div class="languages">
+          <h3 class="languages__heading">Languages:</h3>
+          <ul class="languages__list list">
+            <li class="languages__description">English - C1 (Advanced);</li>
+            <li class="languages__description">Ukrainian - Native;</li>
+            <li class="languages__description">Russian - Native;</li>
+          </ul>
+        </div>
+      </div>
+      <div class="block block__right">
+        <div class="heading">
+          <h1 class="heading__name">Yevhen Petrunkin</h1>
+          <h2 class="heading__position">Frontend-Developer (React)</h2>
+        </div>
+        <div class="box">
+          <div class="article">
+            <div class="article__title">
+              <h3 class="article__name">PROJECTS:</h3>
             </div>
-            <address class="contacts">
-              <a href="tel:+380962978729" class="contact link"
-                ><svg class="icon" width="50" height="50">
-                  <use href="./icons.svg#mobile"></use>
-                </svg>
-                <span>+380962978729</span></a
-              >
-              <a href="tel:+380950143156" class="contact link"
-                ><svg class="icon" width="50" height="50">
-                  <use href="./icons.svg#mobile"></use>
-                </svg>
-                <span>+380950143156</span></a
-              >
-              <a href="tel:+380962978729" class="contact link"
-                ><svg class="icon" width="50" height="50">
-                  <use href="./icons.svg#whatsapp"></use>
-                </svg>
-                <span>+380962978729</span></a
-              >
-              <a href="mailto:novamovaxxi@gmail.com" class="contact link"
-                ><svg class="icon" width="50" height="50">
-                  <use href="./icons.svg#envelope"></use>
-                </svg>
-                <span>novamovaxxi@gmail.com</span></a
-              >
-              <a href="https://t.me/yevhen_petrunkin" class="contact link"
-                ><svg class="icon" width="50" height="50">
-                  <use href="./icons.svg#telegram"></use>
-                </svg>
-                <span>@yevhen_petrunkin</span></a
-              >
-              <a
-                href="https://www.linkedin.com/in/yevhen-petrunkin-503617259/"
-                class="contact link"
-              >
-                <svg class="icon" width="50" height="50">
-                  <use href="./icons.svg#linkedin"></use>
-                </svg>
-                <span>Yevhen Petrunkin</span></a
-              >
-              <a
-                href="https://github.com/yevhen-petrunkin"
-                class="contact link"
-              >
-                <svg class="icon" width="50" height="50">
-                  <use href="./icons.svg#github"></use>
-                </svg>
-                <span>yevhen-petrunkin</span></a
-              >
-              <a
-                href="https://www.facebook.com/profile.php?id=100011788286630"
-                class="contact link"
-              >
-                <svg class="icon" width="50" height="50">
-                  <use href="./icons.svg#facebook"></use>
-                </svg>
-                <span>Yevhen Petrunkin</span></a
-              >
-            </address>
-            <div class="hardskills">
-              <h3 class="hardskills__heading">Tech Skills:</h3>
-              <ul class="hardskills__list list">
-                <li class="hardskills__description">
-                  JavaScript (REST API, Ajax, CRUD, jQuery);
+            <div class="article__body">
+              <h4 class="article__heading body">
+                <span class="article__heading--main">ITCV</span>
+                <span class="article__heading--add"
+                  >- CV generating web application
+                  <i> (this CV was generated by it) </i></span
+                >
+              </h4>
+              <p class="article__tech body">
+                <span class="article__tech--main">Technologies:</span>
+                React, JavaScript, SASS/SCSS, HTML5, Webpack
+                <a class="article__link body" href="">(link</a
+                ><a class="article__link body" href="">github)</a>
+              </p>
+            </div>
+            <div class="article__body">
+              <h4 class="article__heading body">
+                <span class="article__heading--main">Skjøldunga Høll</span>
+                <span class="article__heading--add"
+                  >- Personal website for a linguist video-blogger</span
+                >
+              </h4>
+              <p class="article__tech body">
+                <span class="article__tech--main">Technologies:</span>
+                React, JavaScript, jQuery, Bootstrap, SASS/SCSS, HTML5, Webpack
+                <a class="article__link body" href="">(link</a
+                ><a class="article__link body" href="">github)</a>
+              </p>
+            </div>
+            <div class="article__body">
+              <h4 class="article__heading body">
+                <span class="article__heading--main">Filmoteka</span>
+                <span class="article__heading--add"
+                  >- Movie search website (team project)
+                </span>
+              </h4>
+              <p class="article__tech body">
+                <span class="article__tech--main">Technologies:</span>
+                Vanilla JavaScript, SASS/SCSS, HTML5, Parcel
+                <a class="article__link body" href="">(link</a
+                ><a class="article__link body" href="">github)</a>
+              </p>
+            </div>
+          </div>
+          <div class="article">
+            <div class="article__title">
+              <h3 class="article__name">PREVIOUS EXPERIENCE:</h3>
+            </div>
+            <div class="article__body">
+              <h4 class="article__place body">
+                "Nova Mova" Teaching & Translation Center
+                <i>(Shostka, Ukraine)</i> :
+              </h4>
+              <p class="article__time body">Sept 2011 - Feb 2022</p>
+              <p class="article__position body">
+                Co-Founder, Manager, Translator, English teacher (Entrepreneur)
+              </p>
+              <ul class="article__description list">
+                <li class="article__item body">
+                  Over 200 students who got their language certificate (IELTS,
+                  FCE, PET etc.) under my guidance
                 </li>
-                <li class="hardskills__description">React (Redux);</li>
-                <li class="hardskills__description">
-                  HTML5, CSS, SASS/SCSS, BEM, Bootstrap;
+                <li class="article__item body">
+                  Over 50 large translation projects completed in cooperation
+                  with Ukrainian and international manufacturers
                 </li>
-                <li class="hardskills__description">Git (GitHub, GitBash)</li>
-                <li class="hardskills__description">Webpack, Parcel</li>
-                <li class="hardskills__description">Node.js, TypeScript</li>
+                <li class="article__item body">20 people reporting to me</li>
               </ul>
             </div>
-            <div class="languages">
-              <h3 class="languages__heading">Languages:</h3>
-              <ul class="languages__list list">
-                <li class="languages__description">English - C1 (Advanced);</li>
-                <li class="languages__description">Ukrainian - Native;</li>
-                <li class="languages__description">Russian - Native;</li>
+            <div class="article__body">
+              <h4 class="article__place body">
+                "Mova Servis" Translation Bureau
+                <i>(Kyiv, Ukraine)</i> :
+              </h4>
+              <p class="article__time body">Jan 2011 - Dec 2015</p>
+              <p class="article__position body">Translator (Freelancer)</p>
+              <ul class="article__description list">
+                <li class="article__item body">
+                  150 tech translations in IT and other areas
+                </li>
               </ul>
             </div>
           </div>
-          <div class="block block__right">
-            <div class="heading">
-              <h1 class="heading__name">Yevhen Petrunkin</h1>
-              <h2 class="heading__position">Frontend-Developer (React)</h2>
+          <div class="article">
+            <div class="article__title">
+              <h3 class="article__name">EDUCATION:</h3>
             </div>
-            <div class="box">
-              <div class="article">
-                <div class="article__title">
-                  <h3 class="article__name">PROJECTS:</h3>
-                </div>
-                <div class="article__body">
-                  <h4 class="article__heading body">
-                    <span class="article__heading--main">ITCV</span>
-                    <span class="article__heading--add"
-                      >- CV generating web application
-                      <i> (this CV was generated by it) </i></span
-                    >
-                  </h4>
-                  <p class="article__tech body">
-                    <span class="article__tech--main">Technologies:</span>
-                    React, JavaScript, SASS/SCSS, HTML5, Webpack
-                    <a class="article__link body" href="">(link</a
-                    ><a class="article__link body" href="">github)</a>
-                  </p>
-                </div>
-                <div class="article__body">
-                  <h4 class="article__heading body">
-                    <span class="article__heading--main">Skjøldunga Høll</span>
-                    <span class="article__heading--add"
-                      >- Personal website for a linguist video-blogger</span
-                    >
-                  </h4>
-                  <p class="article__tech body">
-                    <span class="article__tech--main">Technologies:</span>
-                    React, JavaScript, jQuery, Bootstrap, SASS/SCSS, HTML5,
-                    Webpack <a class="article__link body" href="">(link</a
-                    ><a class="article__link body" href="">github)</a>
-                  </p>
-                </div>
-                <div class="article__body">
-                  <h4 class="article__heading body">
-                    <span class="article__heading--main">Filmoteka</span>
-                    <span class="article__heading--add"
-                      >- Movie search website (team project)
-                    </span>
-                  </h4>
-                  <p class="article__tech body">
-                    <span class="article__tech--main">Technologies:</span>
-                    Vanilla JavaScript, SASS/SCSS, HTML5, Parcel
-                    <a class="article__link body" href="">(link</a
-                    ><a class="article__link body" href="">github)</a>
-                  </p>
-                </div>
-              </div>
-              <div class="article">
-                <div class="article__title">
-                  <h3 class="article__name">PREVIOUS EXPERIENCE:</h3>
-                </div>
-                <div class="article__body">
-                  <h4 class="article__place body">
-                    "Nova Mova" Teaching & Translation Center
-                    <i>(Shostka, Ukraine)</i> :
-                  </h4>
-                  <p class="article__time body">Sept 2011 - Feb 2022</p>
-                  <p class="article__position body">
-                    Co-Founder, Manager, Translator, English teacher
-                    (Entrepreneur)
-                  </p>
-                  <ul class="article__description list">
-                    <li class="article__item body">
-                      Over 200 students who got their language certificate
-                      (IELTS, FCE, PET etc.) under my guidance
-                    </li>
-                    <li class="article__item body">
-                      Over 50 large translation projects completed in
-                      cooperation with Ukrainian and international manufacturers
-                    </li>
-                    <li class="article__item body">
-                      20 people reporting to me
-                    </li>
-                  </ul>
-                </div>
-                <div class="article__body">
-                  <h4 class="article__place body">
-                    "Mova Servis" Translation Bureau
-                    <i>(Kyiv, Ukraine)</i> :
-                  </h4>
-                  <p class="article__time body">Jan 2011 - Dec 2015</p>
-                  <p class="article__position body">Translator (Freelancer)</p>
-                  <ul class="article__description list">
-                    <li class="article__item body">
-                      150 tech translations in IT and other areas
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="article">
-                <div class="article__title">
-                  <h3 class="article__name">EDUCATION:</h3>
-                </div>
-                <div class="article__body">
-                  <h4 class="article__place body">
-                    GoIT School: JavaScript-Bootcamp (IT Generation Programme) :
-                  </h4>
-                  <p class="article__time body">Sept 2022 - Jan 2023</p>
-                  <p class="article__position special body">
-                    HTML, CSS, JavaScript, React
-                  </p>
-                </div>
-                <div class="article__body">
-                  <h4 class="article__place body">
-                    Kyiv National Linguistic University :
-                  </h4>
-                  <p class="article__time body">Sept 2006 - Jun 2007</p>
-                  <p class="article__position special body">
-                    Specialist of Psychology (English as major)
-                  </p>
-                  <p class="article__time body">Sept 2002 - Jun 2006</p>
-                  <p class="article__position special body">
-                    Bachelor of Linguistics (English teacher)
-                  </p>
-                </div>
-              </div>
-              <div class="article">
-                <div class="article__title">
-                  <h3 class="article__name">SUMMARY:</h3>
-                </div>
-                <div class="article__body">
-                  <ul class="article__description list">
-                    <li class="article__item body">Registered entrepreneur</li>
-                    <li class="article__item body">
-                      15 years of English tech translation experience (IT
-                      included)
-                    </li>
-                    <li class="article__item body">
-                      20 years of English teaching experience
-                    </li>
-                    <li class="article__item body">Management skills</li>
-                  </ul>
-                </div>
-              </div>
+            <div class="article__body">
+              <h4 class="article__place body">
+                GoIT School: JavaScript-Bootcamp (IT Generation Programme) :
+              </h4>
+              <p class="article__time body">Sept 2022 - Jan 2023</p>
+              <p class="article__position special body">
+                HTML, CSS, JavaScript, React
+              </p>
+            </div>
+            <div class="article__body">
+              <h4 class="article__place body">
+                Kyiv National Linguistic University :
+              </h4>
+              <p class="article__time body">Sept 2006 - Jun 2007</p>
+              <p class="article__position special body">
+                Specialist of Psychology (English as major)
+              </p>
+              <p class="article__time body">Sept 2002 - Jun 2006</p>
+              <p class="article__position special body">
+                Bachelor of Linguistics (English teacher)
+              </p>
+            </div>
+          </div>
+          <div class="article">
+            <div class="article__title">
+              <h3 class="article__name">SUMMARY:</h3>
+            </div>
+            <div class="article__body">
+              <ul class="article__description list">
+                <li class="article__item body">Registered entrepreneur</li>
+                <li class="article__item body">
+                  15 years of English tech translation experience (IT included)
+                </li>
+                <li class="article__item body">
+                  20 years of English teaching experience
+                </li>
+                <li class="article__item body">Management skills</li>
+              </ul>
             </div>
           </div>
         </div>
