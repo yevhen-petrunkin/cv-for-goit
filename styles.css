@@ -126,9 +126,9 @@ p {
   line-height: 30px;
 }
 
-.tech-skills .skills__description:last-child {
+/* .tech-skills .skills__description:last-child {
   color: rgba(255, 255, 255, 0.528);
-}
+} */
 
 .block__right {
   background-color: rgba(3, 22, 64, 0.128);
