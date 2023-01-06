@@ -71,8 +71,8 @@ p {
   margin: 0 auto;
   margin-bottom: 18px;
   padding: 6px;
-  width: 100%;
-  border: 1.8px solid white;
+  width: 80%;
+  border: 2px solid white;
   border-radius: 30px;
   box-shadow: 1.8px 1.8px 3.6px rgb(3, 22, 64);
 }
