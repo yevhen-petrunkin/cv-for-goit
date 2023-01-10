@@ -35,7 +35,7 @@ p {
   height: 100%;
   background-image: linear-gradient(
       white 20%,
-      rgba(255, 255, 255, 0.29) 80%,
+      rgba(255, 255, 255, 0.7) 80%,
       white 100%
     ),
     url(laptop.jpg);
@@ -89,7 +89,7 @@ p {
 }
 
 .contacts {
-  padding: 9px 18px 18px 79.8px;
+  padding: 24px 18px 18px 79.8px;
   letter-spacing: 2.4px;
 }
 
@@ -106,7 +106,7 @@ p {
 }
 
 .skills {
-  padding: 24px 0;
+  padding: 32px 0;
   letter-spacing: 2.4px;
 }
 
@@ -131,7 +131,7 @@ p {
 } */
 
 .block__right {
-  background-color: rgba(3, 22, 64, 0.128);
+  background-color: rgba(3, 22, 64, 0.064);
   width: 978px;
   height: 100%;
   color: rgb(3, 22, 64);
@@ -176,7 +176,7 @@ p {
   display: block;
   top: -39px;
   left: 18px;
-  padding: 15px;
+  padding: 10px;
   padding-left: 18px;
   width: 98.1%;
   background-color: white;
