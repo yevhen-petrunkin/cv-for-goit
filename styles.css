@@ -49,9 +49,9 @@ p {
 
 .block__left {
   padding: 18px;
-  width: 510px;
+  width: 460px;
   height: 100%;
-  font-size: 28px;
+  font-size: 24px;
   /* line-height: 30px; */
   color: white;
   background-image: linear-gradient(
@@ -106,12 +106,12 @@ p {
 }
 
 .skills {
-  padding: 32px 0;
+  padding: 24px 0;
   letter-spacing: 2.4px;
 }
 
 .skills__heading {
-  padding-bottom: 32px;
+  padding-bottom: 20px;
   text-align: center;
   font-size: 28px;
 }
@@ -131,8 +131,8 @@ p {
 } */
 
 .block__right {
-  background-color: rgba(3, 22, 64, 0.064);
-  width: 978px;
+  background-color: rgba(38, 67, 130, 0.064);
+  width: 1028px;
   height: 100%;
   color: rgb(3, 22, 64);
 }
@@ -151,7 +151,7 @@ p {
 }
 
 .heading__name {
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   font-size: 50px;
   letter-spacing: 3.6px;
 }
@@ -164,7 +164,7 @@ p {
 .article {
   position: relative;
   display: block;
-  padding: 51px 18px 48px 18px;
+  padding: 36px 18px 48px 18px;
   background-image: linear-gradient(
     rgba(188, 204, 239, 0.799) 75%,
     transparent 100%
@@ -178,7 +178,7 @@ p {
   left: 18px;
   padding: 10px;
   padding-left: 18px;
-  width: 98.1%;
+  width: 98.3%;
   background-color: white;
   border: 1.2px solid rgb(3, 22, 64);
   border-top-left-radius: 24px;
