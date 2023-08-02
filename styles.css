@@ -48,10 +48,10 @@ p {
 }
 
 .block__left {
-  padding: 18px;
-  width: 460px;
+  padding: 24px;
+  width: 450px;
   height: 100%;
-  font-size: 24px;
+  font-size: 22px;
   /* line-height: 30px; */
   color: white;
   background-image: linear-gradient(
@@ -65,16 +65,15 @@ p {
 }
 
 .photo-block {
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding-top: 8px;
 }
 
 .photo-block__photo {
   display: block;
   margin: 0 auto;
-  margin-bottom: 18px;
+  margin-bottom: 8px;
   padding: 6px;
-  width: 90%;
+  width: 100%;
   border: 2px solid white;
   border-radius: 30px;
   box-shadow: 1.8px 1.8px 3.6px rgb(3, 22, 64);
@@ -82,14 +81,14 @@ p {
 
 .photo-block__location {
   display: block;
-  padding: 18px 0;
+  padding: 8px 0;
   text-align: center;
-  font-size: 28px;
+  font-size: 24px;
   letter-spacing: 3.6px;
 }
 
 .contacts {
-  padding: 24px 18px 18px 79.8px;
+  padding: 18px 0 18px 58px;
   letter-spacing: 2.4px;
 }
 
@@ -101,38 +100,37 @@ p {
 
 .icon {
   position: absolute;
-  left: 43.8px;
+  left: 28px;
   fill: currentColor;
 }
 
 .skills {
-  padding: 24px 0;
+  padding: 8px 0;
   letter-spacing: 2.4px;
 }
 
 .skills__heading {
   padding-bottom: 20px;
   text-align: center;
-  font-size: 28px;
+  font-size: 24px;
 }
 
 .skills__list {
-  padding-left: 60px;
+  list-style: none;
 }
 
 .skills__description {
   padding-bottom: 18px;
-  padding-left: 18px;
-  line-height: 30px;
+  line-height: 1.7;
 }
 
-/* .tech-skills .skills__description:last-child {
-  color: rgba(255, 255, 255, 0.528);
-} */
+.skills__description span {
+  font-weight: bold;
+}
 
 .block__right {
   background-color: rgba(38, 67, 130, 0.064);
-  width: 1028px;
+  width: 1038px;
   height: 100%;
   color: rgb(3, 22, 64);
 }
@@ -165,6 +163,7 @@ p {
   position: relative;
   display: block;
   padding: 36px 18px 48px 18px;
+
   background-image: linear-gradient(
     rgba(188, 204, 239, 0.799) 75%,
     transparent 100%
@@ -187,22 +186,41 @@ p {
 }
 
 .article__name {
+  display: flex;
+  gap: 24px;
+
   font-size: 26px;
+  font-weight: bold;
 }
 
 .article__body {
   padding-bottom: 12px;
   padding-left: 18px;
   font-size: 26px;
+  line-height: 1.22;
 }
 
 .body {
   margin-bottom: 7px;
 }
 
+.article__heading a {
+  text-decoration: underline;
+}
+
 .article__heading--add {
   font-weight: normal;
   text-decoration: none;
+}
+
+.article__tech {
+  padding-left: 16px;
+  font-style: italic;
+}
+
+.article__heading--main,
+.article__tech--main {
+  font-weight: bold;
 }
 
 .article__time {
@@ -220,7 +238,6 @@ p {
 
 .article__description {
   padding-left: 36px;
-  /* list-style: none; */
   font-size: 26px;
 }
 
@@ -233,7 +250,3 @@ p {
   font-weight: bolder;
   color: inherit;
 }
-
-/* .article__body .article__link:first-of-type {
-  margin-right: 18px;
-} */
